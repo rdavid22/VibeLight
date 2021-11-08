@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VibelightApp.ConnectionPage"
+             BackgroundColor="{StaticResource AppBackgroundColor}"
+             Padding ="{StaticResource AppPadding}" >
+    <ContentPage.Content>
+
+        <Grid>
+            <StackLayout Grid.Row="0"
+                         Grid.Column="0"
+                         Spacing="1"
+                         x:Name="MainLayout">
+
+                <Label Text="Setup Connection"
+                       FontSize="30"
+                       FontFamily="sf"
+                       TextColor="#B1F7FF"
+                       Margin="0"
+                       Padding="0" />
+                <Label Text="Wifi SSID"
+                       FontSize="19"
+                       Margin="40,5,0,0"
+                       FontFamily="sfthin"
+                       TextColor="#D8D8D8"
+                       Padding="0" />
+                <Frame Padding="0"
+                       Margin="30,5,30,0"
+                       HeightRequest="40"
+                       CornerRadius="10"
+                       BackgroundColor="#59B1F7FF">
+
+                    <Entry x:Name="Ssid"
+                           HorizontalTextAlignment="Center"
+                           TextChanged="Ssid_TextChanged"
+                           TextColor="Black"
+                           FontFamily="sf"
+                           FontSize="16">
+
+                    </Entry>
+                </Frame>
+                <Label Text="Wifi Password"
+                       FontSize="19"
+                       Margin="40,5,0,0"
+                       FontFamily="sfthin"
+                       TextColor="#D8D8D8"
+                       Padding="0" />
+                <Frame Padding="0"
+                       Margin="30,5,30,0"
+                       HeightRequest="40"
+                       CornerRadius="10"
+                       BackgroundColor="#59B1F7FF">
+                    <Entry x:Name="Password"
+                           TextChanged="Password_TextChanged"
+                           TextColor="Black"
+                           FontFamily="sf"
+                           FontSize="16"
+                           IsPassword="True"
+                           HorizontalTextAlignment="Center">
+
+                    </Entry>
+
+                </Frame>
+                <Label Text="Bluetooth Devices"
+                       FontSize="19"
+                       Margin="40,5,0,10"
+                       FontFamily="sfthin"
+                       TextColor="#D8D8D8"
+                       Padding="0" />
+
+                <ScrollView  Margin="30,0,30,0">
+                    <StackLayout x:Name="MyButtons">
+
+
+
+                    </StackLayout>
+                </ScrollView>
+
+
+                <StackLayout Orientation="Horizontal"
+                             Margin="0,0,30,0">
+
+                    <Label Text="Not Connected"
+                           FontSize="15"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           x:Name="Status"
+                           Margin="0,15,0,0"
+                           FontFamily="sf"
+                           TextColor="#FFE4FD"
+                           Padding="0" />
+                    <Button Text="Refresh"
+                            x:Name="Refresh"
+                            Clicked="Refresh_Clicked"
+                            CornerRadius="10"
+                            BackgroundColor="#FFE4FD"
+                            Opacity="0.7"
+                            TextColor="#343434"
+                            TextTransform="None"
+                            FontFamily="sf"
+                            Margin="0,10,0,0"
+                            FontSize="15"
+                            HeightRequest="30"
+                            WidthRequest="90"
+                            HorizontalOptions="EndAndExpand"
+                            Padding="0" />
+                </StackLayout>
+                <Label Text="1. Connect to your Vibelight Controller via Bluetooth"
+                       TextColor="#D8D8D8"
+                       FontFamily="sf"
+                       FontSize="12"
+                       Margin="0,10,0,0" />
+                <Label Text="2. Connect to your local WiFi network on your phone"
+                       TextColor="#D8D8D8"
+                       FontFamily="sf"
+                       FontSize="12"
+                       Margin="0,0,0,0" />
+                <Label Text="*you can add more device from settings*"
+                       TextColor="#D8D8D8"
+                       FontFamily="sf"
+                       FontSize="12"
+                       Margin="0,0,0,0" />
+                <Button Text="Skip"
+                        x:Name="Skip"
+                        Clicked="Skip_Clicked"
+                        CornerRadius="10"
+                        BackgroundColor="#FFE4FD"
+                        Opacity="0.7"
+                        TextColor="#343434"
+                        TextTransform="None"
+                        FontFamily="sf"
+                        Margin="0,10,0,0"
+                        FontSize="15"
+                        HeightRequest="30"
+                        WidthRequest="90"
+                        HorizontalOptions="Start"
+                        Padding="0" />
+                <Button Opacity="1"
+                        Text="Connect"
+                        Margin="1"
+                        TextColor="Black"
+                        TextTransform="None"
+                        IsEnabled="False"
+                        x:Name="Connect"
+                        Clicked="Connect_Clicked"
+                        FontSize="18"
+                        FontFamily="sf"
+                        HeightRequest="50"
+                        CornerRadius="30"
+                        WidthRequest="100"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="EndAndExpand">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="1.10,0.0"
+                                             EndPoint="0,5">
+                            <GradientStop Color="#80FFE4FD"
+                                          Offset="0.1" />
+                            <GradientStop Color="#80B1F7FF"
+                                          Offset="0.2" />
+
+                        </LinearGradientBrush>
+                    </Button.Background>
+
+                </Button>
+            </StackLayout>
+            <Label Grid.Row="0"
+                   Grid.Column="0"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                   Text=""
+                   IsVisible="False"
+                   FontFamily="sf"
+                   FontSize="40"
+                   TextColor="#FFE4FD"
+                   x:Name="Loading"></Label>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
