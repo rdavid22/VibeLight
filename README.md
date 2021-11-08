@@ -3,7 +3,7 @@
  
  #### A teljes forráskód [innen](https://github.com/codrdr/VibeLight/archive/refs/heads/main.zip) tölthető le.
  
- #### Az alkalmazásról készült videó a [ide](https://duckduckgo.com) kattintva tekinthető meg.
+ #### Az alkalmazásról készült videó a [ide](https://www.youtube.com/watch?v=ODzKlzmUJm8) kattintva tekinthető meg.
  
  #### A fejlesztői dokumentáció [ide](https://github.com/codrdr/VibeLight/blob/main/Wiki/Fejleszt%C5%91i%20dokument%C3%A1ci%C3%B3.md) kattintva tekinthető meg.
  
