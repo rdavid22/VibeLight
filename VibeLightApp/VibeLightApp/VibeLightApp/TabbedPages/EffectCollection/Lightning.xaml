@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VibelightApp.TabbedPages.EffectCollection.Lightning"
+             BackgroundColor="{StaticResource AppBackgroundColor}"
+             Padding="{StaticResource AppPadding}">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" x:Name="MainLayout">
+            <Label Text="Lightning" 
+                                       
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontFamily="sf"
+                   FontSize="45"
+                   Margin="0,0,0,0"
+                   Padding="0,0,0,0"
+                   TextColor="WhiteSmoke"
+                   Opacity="1">
+            </Label>
+            <Label Text="Realtime Settings"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontFamily="sflight"
+                   FontSize="15"
+                   Margin="0,-15,0,30"
+                   Padding="0,0,0,0"
+                   TextColor="WhiteSmoke"
+                   Opacity="1">
+            </Label>
+            <Frame BackgroundColor="#414141"
+                   CornerRadius="15"
+                   Margin="5,15,5,5"
+                   Padding="20,10,20,10">
+                <StackLayout>
+
+                    <Label Text="Chance of lightning"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"
+                           Padding="0,0,0,0"
+                           FontFamily="sf"
+                           FontSize="12"
+                           Margin="16,0,0,0"
+                           TextColor="white"
+                           Opacity="1">
+                    </Label>
+
+                    <Slider 
+                            Maximum="99"
+                            Minimum="0"
+                            Value="90"
+                            ValueChanged="OnChanceChanged"
+                            x:Name="Chance"
+                            ThumbColor="#86c3d1"
+                            MaximumTrackColor="#a8a8a8" />
+            
+                <Label Text="Shake your device"
+                   x:Name="shake"
+                   FontFamily="sfthin"
+                   TextColor="#D8D8D8"
+                   FontSize="15"
+                   VerticalOptions="Center"
+                   IsVisible ="false"/>
+
+                    <Button
+                        Text="Zeus Mode"
+                        x:Name="Zeus"
+                        WidthRequest="130"
+                        FontSize="12"
+                        FontFamily="sf"
+                        CornerRadius="15"
+                        TextTransform="None"
+                        BackgroundColor="#414141"
+                        Clicked="Zeus_Clicked"
+                        TextColor="GhostWhite">
+                    </Button>
+
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

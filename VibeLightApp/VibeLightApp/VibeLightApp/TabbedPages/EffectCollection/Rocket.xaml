@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VibelightApp.TabbedPages.EffectCollection.Rocket"
+             BackgroundColor="{StaticResource AppBackgroundColor}"
+             Padding="{StaticResource AppPadding}">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center"
+                     x:Name="MainLayout">
+            <Label Text="Rocket"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontFamily="sf"
+                   FontSize="45"
+                   Margin="0,0,0,0"
+                   Padding="0,0,0,0"
+                   TextColor="WhiteSmoke"
+                   Opacity="1">
+            </Label>
+            <Label Text="Realtime Settings"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontFamily="sflight"
+                   FontSize="15"
+                   Margin="0,-15,0,30"
+                   Padding="0,0,0,0"
+                   TextColor="WhiteSmoke"
+                   Opacity="1">
+            </Label>
+            <Frame BackgroundColor="#414141"
+                   CornerRadius="15"
+                   Margin="5,15,5,5"
+                   Padding="20,10,20,10">
+                <StackLayout>
+
+                    <Label Text="Color Options"
+                           VerticalOptions="Center"
+                           HorizontalOptions="CenterAndExpand"
+                           Padding="0,0,0,0"
+                           FontFamily="sf"
+                           FontSize="15"
+                           Margin="0,0,0,-10"
+                           TextColor="white"
+                           Opacity="1">
+                    </Label>
+                    <Label Text="Fade"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"
+                           Padding="0,0,0,0"
+                           FontFamily="sf"
+                           FontSize="12"
+                           Margin="16,0,0,0"
+                           TextColor="white"
+                           Opacity="1">
+                    </Label>
+
+                    <Slider Maximum="255"
+                            Minimum="0"
+                            Value="128"
+                            ValueChanged="OnFadeChanged"
+                            x:Name="Fade"
+                            ThumbColor="#86c3d1"
+                            MaximumTrackColor="#a8a8a8" />
+                    
+                    <Label Text="Hue"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"
+                           Padding="0,0,0,0"
+                           FontFamily="sf"
+                           FontSize="12"
+                           Margin="16,0,0,0"
+                           TextColor="white"
+                           Opacity="1">
+                    </Label>
+
+                    <Slider Maximum="255"
+                            Minimum="0"
+                            Value="70"
+                            ValueChanged="OnHueChanged"
+                            MinimumTrackColor="#86c3d1"
+                            MaximumTrackColor="#a8a8a8"
+                            ThumbColor="#86c3d1"
+                            x:Name="Hue" />
+
+                    <Label Text="Delta Hue"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"
+                           Padding="0,0,0,0"
+                           FontFamily="sf"
+                           FontSize="12"
+                           Margin="16,0,0,0"
+                           TextColor="white"
+                           Opacity="1">
+                    </Label>
+
+
+                    <Slider Maximum="30"
+                            Minimum="0"
+                            Value="4"
+                            ThumbColor="#86c3d1"
+                            MinimumTrackColor="#86c3d1"
+                            MaximumTrackColor="#a8a8a8"
+                            ValueChanged="OnDeltaHueChanged"
+                            x:Name="DeltaHue" />
+
+
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="#414141"
+                   CornerRadius="15"
+                   Margin="5,15,5,5"
+                   Padding="20,10,20,10">
+                <StackLayout>
+
+                    <Label Text="Rocket Options"
+                           VerticalOptions="Center"
+                           HorizontalOptions="CenterAndExpand"
+                           Padding="0,0,0,0"
+                           FontFamily="sf"
+                           FontSize="15"
+                           Margin="0,0,0,-10"
+                           TextColor="white"
+                           Opacity="1">
+                    </Label>
+
+                    <Label Text="Brightness"
+                           IsEnabled="True"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"
+                           Padding="0,0,0,0"
+                           FontFamily="sf"
+                           FontSize="12"
+                           Margin="16,0,0,0"
+                           TextColor="white"
+                           Opacity="1">
+                    </Label>
+
+                    <Slider Maximum="255"
+                            Minimum="0"
+                            Value="255"
+                            ValueChanged="OnBrightnessChanged"
+                            MinimumTrackColor="#86c3d1"
+                            MaximumTrackColor="#a8a8a8"
+                            ThumbColor="#86c3d1"
+                            x:Name="Brightness" />
+
+                    <Label Text="Delay"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"
+                           Padding="0,0,0,0"
+                           FontFamily="sf"
+                           FontSize="12"
+                           Margin="16,0,0,0"
+                           TextColor="white"
+                           Opacity="1">
+                    </Label>
+
+
+                    <Slider Maximum="50"
+                            Minimum="1"
+                            Value="20"
+                            ThumbColor="#86c3d1"
+                            MinimumTrackColor="#86c3d1"
+                            MaximumTrackColor="#a8a8a8"
+                            ValueChanged="OnDelayChanged"
+                            x:Name="Delay" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
