@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VibelightApp.SplashScreen"
+             BackgroundColor="{StaticResource AppBackgroundColor}"
+             Padding = "{StaticResource AppPadding}">
+    <ContentPage.Content>
+        <StackLayout Spacing="1"
+                     x:Name="MainLayout">
+            <Label Text="Welcome To"
+                   FontSize="50"
+                   FontFamily="sf"
+                   TextColor="#B1F7FF"
+                   Margin="0"
+                   Padding="0"
+                   HeightRequest="60" />
+            <Label Text="Vibelight"
+                   FontSize="30"
+                   FontFamily="sf"
+                   TextColor="#FFE4FD"
+                   Margin="0"
+                   Padding="0"
+                   HeightRequest="40" />
+            <Label Text="Customize your led strip"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="sfthin"
+                   TextColor="#D8D8D8"
+                   Margin="0,100,0,0"
+                   Padding="0"
+                   HeightRequest="22" />
+            <Label Text="with unlimited freedom"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   FontFamily="sfthin"
+                   TextColor="#D8D8D8"
+                   Margin="0,0,0,0"
+                   Padding="0"
+                   HeightRequest="40" />
+            <StackLayout Orientation="Horizontal"
+                         Margin="0,40,0,20"
+                         Spacing="15">
+                <Image Source="magic.png"
+                       Opacity="0.5"
+                       HeightRequest="35" />
+                <Label Text="Unique Effects"
+                       FontFamily="sfthin"
+                       TextColor="#D8D8D8"
+                       FontSize="15"
+                       VerticalOptions="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         Spacing="15"
+                         Margin="0,0,0,20">
+                <Image Source="touch.png"
+                       Opacity="0.5"
+                       HeightRequest="35" />
+                <Label Text="Interactive"
+                       FontFamily="sfthin"
+                       TextColor="#D8D8D8"
+                       FontSize="15"
+                       VerticalOptions="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         Spacing="15">
+                <Image Source="volume.png"
+                       Opacity="0.5"
+                       HeightRequest="35" />
+                <Label Text="Sound Reactive"
+                       FontFamily="sfthin"
+                       TextColor="#D8D8D8"
+                       FontSize="15"
+                       VerticalOptions="Center" />
+            </StackLayout>
+            <Button Opacity="0.5"
+                    Text="Next"
+                    Margin="1"
+                    TextColor="Black"
+                    TextTransform="None"
+                    x:Name="Next"
+                    Clicked="Next_Clicked"
+                    FontSize="23"
+                    FontFamily="sf"
+                    HeightRequest="50"
+                    CornerRadius="30"
+                    WidthRequest="100"
+                    HorizontalOptions="EndAndExpand"
+                    VerticalOptions="EndAndExpand">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="1.10,0.0"
+                                         EndPoint="0,5">
+                        <GradientStop Color="#FFE4FD"
+                                      Offset="0.1" />
+                        <GradientStop Color="#B1F7FF"
+                                      Offset="0.2" />
+
+                    </LinearGradientBrush>
+                </Button.Background>
+
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
