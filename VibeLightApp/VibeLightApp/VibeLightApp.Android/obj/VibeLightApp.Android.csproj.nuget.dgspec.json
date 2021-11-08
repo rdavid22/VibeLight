@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Suli\\Mikroelektromechanika\\VibeLight\\VibeLightApp\\VibeLightApp\\VibeLightApp.Android\\VibeLightApp.Android.csproj": {}
+    "C:\\Users\\Geri\\source\\repos\\VibelightApp\\VibelightApp\\VibelightApp.Android\\VibelightApp.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Suli\\Mikroelektromechanika\\VibeLight\\VibeLightApp\\VibeLightApp\\VibeLightApp.Android\\VibeLightApp.Android.csproj": {
+    "C:\\Users\\Geri\\source\\repos\\VibelightApp\\VibelightApp\\VibelightApp.Android\\VibelightApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Suli\\Mikroelektromechanika\\VibeLight\\VibeLightApp\\VibeLightApp\\VibeLightApp.Android\\VibeLightApp.Android.csproj",
-        "projectName": "VibeLightApp.Android",
-        "projectPath": "C:\\Users\\User\\Desktop\\Suli\\Mikroelektromechanika\\VibeLight\\VibeLightApp\\VibeLightApp\\VibeLightApp.Android\\VibeLightApp.Android.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Suli\\Mikroelektromechanika\\VibeLight\\VibeLightApp\\VibeLightApp\\VibeLightApp.Android\\obj\\",
+        "projectUniqueName": "C:\\Users\\Geri\\source\\repos\\VibelightApp\\VibelightApp\\VibelightApp.Android\\VibelightApp.Android.csproj",
+        "projectName": "VibelightApp.Android",
+        "projectPath": "C:\\Users\\Geri\\source\\repos\\VibelightApp\\VibelightApp\\VibelightApp.Android\\VibelightApp.Android.csproj",
+        "packagesPath": "C:\\Users\\Geri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Geri\\source\\repos\\VibelightApp\\VibelightApp\\VibelightApp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Geri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -34,8 +32,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\Suli\\Mikroelektromechanika\\VibeLight\\VibeLightApp\\VibeLightApp\\VibeLightApp\\VibeLightApp.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\Suli\\Mikroelektromechanika\\VibeLight\\VibeLightApp\\VibeLightApp\\VibeLightApp\\VibeLightApp.csproj"
+              "C:\\Users\\Geri\\source\\repos\\VibelightApp\\VibelightApp\\VibelightApp\\VibelightApp.csproj": {
+                "projectPath": "C:\\Users\\Geri\\source\\repos\\VibelightApp\\VibelightApp\\VibelightApp\\VibelightApp.csproj"
               }
             }
           }
@@ -56,22 +54,20 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\Suli\\Mikroelektromechanika\\VibeLight\\VibeLightApp\\VibeLightApp\\VibeLightApp\\VibeLightApp.csproj": {
+    "C:\\Users\\Geri\\source\\repos\\VibelightApp\\VibelightApp\\VibelightApp\\VibelightApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Suli\\Mikroelektromechanika\\VibeLight\\VibeLightApp\\VibeLightApp\\VibeLightApp\\VibeLightApp.csproj",
-        "projectName": "VibeLightApp",
-        "projectPath": "C:\\Users\\User\\Desktop\\Suli\\Mikroelektromechanika\\VibeLight\\VibeLightApp\\VibeLightApp\\VibeLightApp\\VibeLightApp.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Suli\\Mikroelektromechanika\\VibeLight\\VibeLightApp\\VibeLightApp\\VibeLightApp\\obj\\",
+        "projectUniqueName": "C:\\Users\\Geri\\source\\repos\\VibelightApp\\VibelightApp\\VibelightApp\\VibelightApp.csproj",
+        "projectName": "VibelightApp",
+        "projectPath": "C:\\Users\\Geri\\source\\repos\\VibelightApp\\VibelightApp\\VibelightApp\\VibelightApp.csproj",
+        "packagesPath": "C:\\Users\\Geri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Geri\\source\\repos\\VibelightApp\\VibelightApp\\VibelightApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Geri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -104,6 +100,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Xamarin.Android.Service": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.6.1, )"
@@ -111,6 +111,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2012, )"
+            },
+            "sharpcaster.SocketsForPCL": {
+              "target": "Package",
+              "version": "[2.0.4, )"
             }
           },
           "imports": [
@@ -123,7 +127,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
