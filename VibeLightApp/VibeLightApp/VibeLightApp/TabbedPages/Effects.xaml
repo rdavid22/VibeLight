@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VibelightApp.TabbedPages.Effects"
+             BackgroundColor="{StaticResource AppBackgroundColor}"
+             Padding ="30,50,30,30" >
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Effects"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       FontFamily="sf"
+                       FontSize="27"
+                       TextColor="#FFE4FD"
+                       Opacity="1" />
+
+                <Button Text="null"
+                        x:Name="ListButton"
+                        BackgroundColor="#70FFE4FD"
+                        CornerRadius="30"
+                        Padding="0"
+                        Margin="0,0,0,10"
+                        HeightRequest="0"
+                        HorizontalOptions="EndAndExpand"
+                        FontFamily="sf"
+                        FontSize="18"
+                        TextTransform="None"
+                        TextColor="white"
+                        Clicked="List_Clicked" />
+
+            </StackLayout>
+            <ScrollView>
+        <StackLayout Spacing="5"
+                     Padding="0"
+                     x:Name="MainView">
+    
+
+
+                <Button TextColor="#454545"
+                    FontFamily="sf"
+                    FontSize="25"
+                    HeightRequest="40"
+                    Margin="0,10,0,10"
+                        BackgroundColor="#a5c8cf"
+                    Text="Clear"
+                    TextTransform="None"
+                    CornerRadius="30"
+                    Padding="0"
+                    Clicked="Clear_Clicked"
+                    />
+
+            
+                <StackLayout x:Name="EffectButtons">
+                    
+                </StackLayout>
+                <Frame BackgroundColor="#414141" CornerRadius="15" Margin="5,15,5,5" Padding="20,10,20,10">
+                    <StackLayout>
+
+                    <Label
+                       Text="Lamp"   
+                       VerticalOptions="Center"
+                       HorizontalOptions="CenterAndExpand"
+                       Padding="0,0,0,0"
+                       FontFamily="sf"
+                       FontSize="15"              
+                       Margin="0,0,0,-10"
+                       TextColor="white"
+                       Opacity="1" >
+                    </Label>
+                            <Label Text="Hue"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="StartAndExpand"
+                                   Padding="0,0,0,0"
+                                   FontFamily="sf"
+                                   FontSize="12"
+                                   Margin="16,0,0,0"
+                                   TextColor="white"
+                                   
+                                   Opacity="1">
+                            </Label>
+
+                            <Slider Maximum="255"
+                                    Minimum="0"
+                          
+                                    Value="0"
+                                    ValueChanged="OnHueChanged"
+                            x:Name="Hue"
+                            ThumbColor="#86c3d1"
+                            MaximumTrackColor="#a8a8a8" />
+                            <Label Text="Saturation"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="StartAndExpand"
+                                   Padding="0,0,0,0"
+                                   FontFamily="sf"
+                                   FontSize="12"
+                                   Margin="16,0,0,0"
+                                   TextColor="white"
+                                   Opacity="1">
+                            </Label>
+
+                            <Slider 
+                           
+                            Maximum="255"                            
+                            Minimum="0"
+                                    Value="255"
+                                    ValueChanged="OnSaturationChanged"
+                            MinimumTrackColor="#86c3d1"
+                            MaximumTrackColor="#a8a8a8"
+                            ThumbColor="#86c3d1" x:Name ="Saturation" />
+                            
+                            <Label Text="Brightness"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="StartAndExpand"
+                                   Padding="0,0,0,0"
+                                   FontFamily="sf"
+                                   FontSize="12"
+                                   Margin="16,0,0,0"
+                                   TextColor="white"
+                                   Opacity="1">
+                            </Label>
+
+
+                            <Slider 
+                            ThumbColor="#86c3d1"
+                            MinimumTrackColor="#86c3d1"
+                            MaximumTrackColor="#a8a8a8"
+                            Maximum="255"
+                                    Minimum="0"
+                                    Value="255"
+                                    ValueChanged="OnBrightnessChanged"  x:Name ="Brightness"/>
+                            
+
+                </StackLayout>
+              </Frame>
+               
+                
+            
+            </StackLayout>
+        </ScrollView>
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="EndAndExpand">
+                <Button x:Name="SettingsButton"
+                        TextColor="#454545"
+                        Text="Settings"
+                        FontFamily="sf"
+                        TextTransform="None"
+                        CornerRadius="15"
+                        HorizontalOptions="StartAndExpand"
+                        Margin="20,0,0,0"
+                        BackgroundColor="#90FFFFFF"
+                        Clicked="SettingsButton_Clicked">
+
+                </Button>
+                <Button TextColor="#454545"
+                        x:Name="AddNewButton"
+                        Text="Add new"
+                        BackgroundColor="#90FFFFFF"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="0,0,20,0"
+                        TextTransform="None"
+                        CornerRadius="15"
+                        FontFamily="sf"
+                        Clicked="AddNewButton_Clicked">
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
