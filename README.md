@@ -1,2 +1,2 @@
 # VibeLight
- Beadandó projektmunka
+ Mikroelektromechanikai rendszerek (GKNB_INTM020)
