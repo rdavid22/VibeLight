@@ -17,12 +17,13 @@
 ###### 3.1 Az okostelefonon nyissuk meg az áruházat, majd töltsük le a VibeLight nevű alkalmazást. Ha az okostelefonunk végzett az alkalmazás letöltésével és telepítésével, haladjunk tovább a 3.2 lépésre.
 ###### 3.2 Indítsuk el az alkalmazást, majd ha betöltött, haladjunk tovább a 3.3 lépésre.
 ###### 3.3 Indítás után egy üdvözlőképernyő fogad minket, melyen tájékoztató jellegű információ található a termékről. A jobb alsó sarokban található _"Next"_ gombra kattintva haladjunk tovább a 4.4 lépésre.
-
+![img](https://kepkuldes.com/images/bad476aff31f56224adde1aa26c1d3c1.jpg)
 ### 4. Hálózatra való csatlakozás
 ###### A világítás vezérléséért felelős eszközt a vezeték nélküli hálózatra kell csatlakoztatni.
 ###### 4.4 A _Wifi SSID_ cím alatt található _ssid_ mezőre koppintva írjuk be az otthoni vezeték nélküli hálózatunk egyedi azonosítóját (SSID), melyet alapértelmezetten a Router hátoldalán találhatunk. Haladjunk tovább a 4.5 lépésre.
 ###### 4.5 A _Wifi Password_ cím alatt található _*******_ mezőre koppintva írjuk be az otthoni vezeték nélküli hálózatunk jelszavát, melyet alapértelmezetten a Router hátoldalán találhatunk. Haladjunk tovább a 4.6 lépésre.
 ###### 4.6 Sikeres párosítás esetén kattintsunk a _Refresh_ gombra, majd várjunk egészen addig, amíg meg nem jelenik a _Bluetooth Devices_ cím alatt lévő mezőben a már korábban párosított eszköz neve, például: _("VibeLightController#00001”")_. Ha túl sokáig nem jelenne meg semmi a mezőben, koppintsunk újra a _Refresh_ gombra. Mindeközben bizonyosodjunk meg arról, hogy korábban sikerült -e már a párosítási folyamat. Ha sikeresen megjelent az eszközünk a mezőben, kattintsunk a jobb alsó sarokban található _Next_ gombra. A megjelenő képernyőn egy _"Connecting.."_ felirat található. Várjuk meg amíg eltűnik és ugorjunk az 5.1-es pontra.
+![img](https://kepkuldes.com/images/a0aea3faae599238e8460eed8c93a763.jpg)
 
 ### 5. Alkalmazás használata
 ##### Effektek használata
@@ -38,6 +39,7 @@
 
 ##### Effektek leállítása
 ###### A jelenleg futó effektek leállításához koppintsunk a főoldalon található _"Clear"_ gombra.
+![img](https://kepkuldes.com/images/7f3d385b370e3db1c68ed0d8e36ee53f.jpg)
 
 ##### Beállítások
 ###### 7.1 A _"Settings"_ gombra kattintva megnyílik a beállítás menü, ahol a ledszalagunk és mikrokontrollerünk paramétereit tudjuk módosítani.
@@ -45,6 +47,7 @@
 ###### 7.3 A _"Brightness"_ cím alatt található négy gomb segítségével a ledszalag alapértelmezett fényerejét tudjuk módosítani. Az első gomb az _"Eco"_ amely energiatakarékos üzemmódba helyezi az eszközt. A _"Balanced"_ mód kiegyensúlyozott világítást tesz lehetővé. A _"Bright"_ mód nappali használatra ajánlott. Az _"Ultra"_ mód hosszútávú használata nem ajánlott, mert megrövidíti a ledek élettartamát. Ez a mód a legfényesebb az összes közül.
 ###### 7.4 A _"Reset Controller"_ cím alatt található _"Reset"_ gombra kattintva lehetőségünk van visszaállítani az eszköz beállításait gyári beállításokra.
 ###### 7.5 A _"Device Info"_ cím alatt megtekinthetjük az eszközünkről tárolt információkat, így az eszköz nevét (amelyet csatlakozáshoz használ), az IP-címét ( amely hálózati hibafelderítésnél lehet hasznos), a ledek számát és az Alias nevet, amelyet a felhasználó adhat meg a 7.2-es pontban foglaltak szerint.
+![img](https://kepkuldes.com/images/60a2abc77e7595c6d86a9f65ece13f97.jpg)
 
 ##### Több eszköz hozzáadása
 ###### A főoldalon található _"Add new"_ gombra koppintva az alkalmazás visszaugrik a 4.4-es pontra. Kövessük az ott található utasításokat, majd kattintsunk a _"Next"_ gombra.
